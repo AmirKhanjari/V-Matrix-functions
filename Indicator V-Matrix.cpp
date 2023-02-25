@@ -8,7 +8,7 @@ using namespace arma;
 
 // [[Rcpp::plugins(openmp)]]
 // [[Rcpp::export]]
-mat Vmatrix_parallel(const mat &X, const mat &XT) {
+mat IV(const mat &X, const mat &XT) {
   int n = X.n_rows;
   int nn = XT.n_rows;
   int m = X.n_cols;
